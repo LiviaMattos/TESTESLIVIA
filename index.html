@@ -6,26 +6,34 @@
   <style>
     figure {
       display: flex;
+      flex-direction: column;
       align-items: center;
       margin: 20px 0;
     }
 
     figcaption {
-      flex: 1;
+      margin-bottom: 10px;
     }
 
     audio {
-      width: 100%;
-      background-color: black;
-      color: orange;
-      border: 2px solid orange;
+      width: 50%;
+      max-width: 300px;
+      background-color: #16171b; /* Cor preta especificada */
+      color: #f19001; /* Cor laranja especificada */
+      border: 2px solid #f19001;
       border-radius: 5px;
       padding: 10px;
-      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+
+    img {
+      width: auto;
+      height: 50px;
+      object-fit: contain;
     }
 
     a {
-      color: orange;
+      color: #f19001; /* Cor laranja especificada */
       text-decoration: none;
       font-weight: bold;
     }
@@ -39,9 +47,9 @@
 
 <figure>
   <figcaption>Quer conferir esse conteúdo em áudio? Escuta aqui:</figcaption>
-  <img src="./logobrq.png" alt="Logo" width="50" height="50">
   <audio controls src="./feranewsponto.mp3"></audio>
   <a href="./feranewsponto.mp3">Download audio</a>
+  <img src="caminho/do/seu/logo.png" alt="Logo">
 </figure>
 
 </body>
